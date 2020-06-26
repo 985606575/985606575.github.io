@@ -172,7 +172,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="通过hexo搭建个人博客的思路和环境配置"><a href="#通过hexo搭建个人博客的思路和环境配置" class="headerlink" title="通过hexo搭建个人博客的思路和环境配置:"></a>通过hexo搭建个人博客的思路和环境配置:</h1><li>需要下载的包有，Git、nodejs（前面这两个可以直接在官网下载）、cnpm、hexo（后面这两个是在cmd中下载的，当然也能在官网下载）
+
+<li>首先下载git之后，要配置系统变量环境，网上可以查到怎么配置
+
+<li>然后在本地将git的用户名和邮箱进行设置，网上也可以查到怎么做
+
+<li>安装nodejs，最好别是C盘，安装好后如果不能在cmd中调用node，则需要查看系统变量配置好没。有可能没配置好，需要手改。
+
+<li>通过nodejs中的npm，下载cnpm，然后在用cnpm下载hexo，然后就可以通过hexo搞事情了。
+
+<li>可以先hexo init初始化blog，然后通过g和s等命令在本地使用blog
+
+<li>然后一般需要把博客部署到github上（因为免费），这样别人都能用了。需要先在github中创建一个新库，然后用  “用户名.github.io”样式的名字命名这个库。然后在本地cmd中修改_config.yml文件中的参数，按要求修改后，在cmd中进行clean，g，d操作就可以成功部署到网上。注意在进行d操作的时候，需要输入github的用户名和密码，别输入错误。
       
 
       
